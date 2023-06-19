@@ -25,7 +25,7 @@ int main()
   #error No clang in this example please
   #endif
 
-  assert(f() == 1);
+  if(f() != 1) return 1; // No assert, 'f' should not be optimized away
 
   // Show compiler and version
   std::cout << "Compiler: " << BOOST_COMPILER << '\n';
