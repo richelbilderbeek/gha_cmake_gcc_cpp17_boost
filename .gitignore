@@ -34,3 +34,4 @@ build/
 test.dot
 Makefile
 .qmake.stash
+gha_cmake_gcc_cpp17_boost
