@@ -17,13 +17,6 @@ int main()
 {
   static_assert("C++17"); //C++17 has a default message
 
-
-  #ifndef NDEBUG
-  #error Do not profile in debug mode
-  #endif
-  assert(!"Do not profile in debug mode");
-  static_assert("C++17");
-
   #ifndef __GNUC__
   #error This example assumes GCC
   #endif
