@@ -17,7 +17,7 @@ The goal of this project is to have a clean GitHub Actions build, with specs:
 
 More complex builds:
 
- * Use `gprof` to profile code: [gha_cmake_gcc_cpp17_boost_gprof](https://github.com/richelbilderbeek/gha_cmake_gcc_cpp17_boost_gprof)
+ * [none]
 
 Equally complex builds:
 
@@ -26,4 +26,5 @@ Equally complex builds:
 Less complex builds:
 
  * No Boost C++ libraries: [gha_cmake_gcc_cpp17](https://github.com/richelbilderbeek/gha_cmake_gcc_cpp17)
+ * No `CMake`: [gha_gcc_cpp17_boost](https://github.com/richelbilderbeek/gha_gcc_cpp17_boost)
  
