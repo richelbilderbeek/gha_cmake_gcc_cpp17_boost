@@ -18,17 +18,11 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Install Qt
-        uses: jurplel/install-qt-action@v3
-
       - name: Install Boost
         run: sudo apt install libboost-all-dev
 
-      - name: Run qmake
-        run: qmake gha_qmake_gcc_cpp17_boost.pro
+      - name: Build
+        run: ./scripts/build.sh
 
-      - name: Run make
-        run: make debug --silent
-
-      - name: Run program
-        run: ./gha_qmake_gcc_cpp17_boost
+      - name: Run the program
+        run: ./build/gha_cmake_gcc_cpp17
