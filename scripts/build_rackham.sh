@@ -46,5 +46,5 @@ module load gcc/11.2.0 boost/1.78.0_gcc11.2.0 cmake/3.26.3
 ./scripts/build.sh
 
 # Run
-./build/gha_cmake_gcc_cpp17_booost
+./build/gha_cmake_gcc_cpp17_boost
 
