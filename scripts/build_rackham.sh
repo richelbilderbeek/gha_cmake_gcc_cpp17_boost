@@ -24,7 +24,23 @@ else
   exit 42
 fi
 
-module load gcc/13.1.0 cmake/3.26.3
+# One needs a boost module that is compatible with a gcc module:
+#
+# module spider boost
+#
+# gives, among others:
+# 
+#        boost/1.70.0_intel18.3_intelmpi18.3
+#        boost/1.70.0_intel18.3_mpi3.1.3
+#        boost/1.70.0_intel18.3
+#        boost/1.75.0-gcc9.3.0
+#        boost/1.78.0_gcc11.2.0_mpi4.1.2
+#        boost/1.78.0_gcc11.2.0
+#        boost/1.79.0_gcc11.2.0_mpi4.1.2
+#        boost/1.81.0-gcc10.3.0-mpi4.1.1
+#        boost/1.81.0-gcc10.3.0
+
+module load gcc/11.2.0 boost/1.78.0_gcc11.2.0 cmake/3.26.3
 
 # Build
 ./scripts/build.sh
